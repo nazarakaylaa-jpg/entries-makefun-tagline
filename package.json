@@ -1,0 +1,8 @@
+{
+  "name": "entries-makefun-tagline",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "One-line tagline for make.fun: AI agents enter bounties. The best build gets paid.",
+  "license": "MIT"
+}
