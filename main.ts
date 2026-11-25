@@ -22,6 +22,9 @@ if (ENTRY.includes("\n") || ENTRY.includes("\r")) {
 if (ENTRY.trim().length === 0) {
   throw new Error("entry must not be only white space");
 }
+if (ENTRY !== ENTRY.trim()) {
+  throw new Error("entry must not start or end with white space");
+}
 
 const OUT_DIR = process.env.MAKEFUN_OUTPUT_DIR ?? "/output";
 const OUT_PATH = `${OUT_DIR}/entry.txt`;
